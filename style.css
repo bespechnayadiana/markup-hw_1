@@ -1,0 +1,239 @@
+.title-center,
+.title-left {
+    position: relative;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+.title-center:after,
+.title-left:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 50px;
+    height: 3px;
+    background: var(--yellow);
+}
+
+.title-left:after {
+    left: 0;
+}
+
+.title-center:after {
+    left: 50%;
+    transform: translateX(-50px);
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    background: var(--yellow);
+    border: 2px solid var(--yellow);
+    font-family: "Cardo", serif;
+    padding: 17px 50px;
+    color: var(--blue);
+}
+
+.btn-outline {
+    background: transparent;
+}
+
+.btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+.section-header {
+    padding-bottom: 50px;
+}
+
+
+section {
+    padding: 126px 102px;
+}
+
+.section-authors .row,
+.section-partners .row,
+.section-articles .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+}
+
+.section-authors .col {
+    width: 50%;
+    padding: 0 24px 48px;
+}
+
+.section-authors .card,
+.section-partners .card,
+.section-articles .card {
+    display: flex;
+}
+
+.section-authors .preview {
+    max-width: 307px;
+    width: 100%;
+    padding-top: 67.2%;
+    background-position: center;
+    background-size: cover;
+    /*height: 404px;*/
+}
+
+.section-authors .card-description {
+    width: calc(100% - 307px);
+    padding: 49px 0 49px 30px;
+    font-size: 19px;
+    line-height: 1.47;
+}
+
+.section-authors .card-title {
+    font-size: 32px;
+    line-height: 1.18;
+    margin-bottom: 7px;
+}
+
+.price {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 17px;
+    color: var(--yellow);
+    font-size: 21px;
+}
+
+.cat-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cat-item {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.cat-item:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background: var(--yellow);
+    border-radius: 50%;
+}
+
+.section-partners .col {
+    width: 25%;
+    padding: 0 24px 48px;
+}
+
+.section-partners .card,
+.section-articles .card {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-partners .card-partner {
+    height: 100px;
+    max-width: 189px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 22px;
+}
+
+.section-partners .card-description {
+    width: 100%;
+    font-size: 19px;
+    line-height: 1.47;
+    text-align: center;
+}
+
+.section-partners .card-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.section-articles {
+    background-color: var(--light-blue);
+}
+
+.section-articles .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.section-articles .col {
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.section-articles .card {
+    background-color: var(--white);
+    transition: 0.3s box-shadow ease-in-out;
+}
+
+.section-articles .card:hover {
+    box-shadow: 0 20px 30px 0 var(--light-gray);
+}
+
+.section-articles .preview {
+    max-width: 420px;
+    width: 100%;
+    padding-top: 83.33%;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-articles .card-description {
+    width: 100%;
+    font-size: 19px;
+    line-height: 1.47;
+    padding: 25px 30px;
+}
+
+.section-articles .card-title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 19px;
+}
+
+.section-articles .card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-articles .card-btn {
+    position: relative;
+    line-height: 1.2;
+}
+
+.section-articles .card-btn:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s width ease-in-out;
+}
+
+.section-articles .card-btn:hover {
+    opacity: 1;
+}
+
+.section-articles .card-btn:hover:before {
+    width: 0;
+}
+
+.section-articles .card-date {
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 1.62;
+}
